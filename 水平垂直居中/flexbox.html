@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>flexbox</title>
+    <style type="text/css">
+        /* change default settings*/
+        body,html {
+            margin: 0;
+            padding: 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            /* 设置div占满viewport */
+            height: 100vh;
+            width: 100vw;
+            /* 设置div为flex container，其内元素为flex items */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span>I'm centered vertically and horizontally!</span>
+    </div>
+</body>

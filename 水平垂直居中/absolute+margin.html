@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>absolute+margin</title>
+    <style type="text/css">
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* 限制宽高 */
+            width: 400px;
+            height: 100px;
+            /* 根据div宽高调整offset */
+            margin-top: -50px;
+            margin-left: -200px;
+            /* 文本水平居中 */
+            text-align: center;
+            /* 文本垂直居中 */
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span>I'm centered vertically and horizontally!</span>
+    </div>
+</body>
