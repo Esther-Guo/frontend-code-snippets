@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf=8">
+        <title>多个块级元素水平居中的两种方式</title>
+        <style>
+            body {
+                background: #f06d06;
+            }
+            main {
+                background-color: aliceblue;
+                margin: 20px;
+                padding: 10px;
+            }
+            main div {
+                background-color: black;
+                color: aliceblue;
+                padding: 10px;
+                margin: 10px;
+                max-width: 125px;
+            }
+            .inline-block-center {
+                text-align: center;
+            }
+            .inline-block-center div {
+                display: inline-block;
+            }
+            .flex-center {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="inline-block-center">
+            <div>
+              I'm an element that is block-like with my siblings and we're centered in a row.
+            </div>
+            <div>
+              方式一：将块级元素的display属性改为inline-block，外层设置text-align: center
+            </div>
+            <div>
+              I'm an element that is block-like with my siblings and we're centered in a row.
+            </div>
+          </main>
+          
+          <main class="flex-center">
+            <div>
+              I'm an element that is block-like with my siblings and we're centered in a row.
+            </div>
+            <div>
+              方式二：外层元素display属性改为flex，并设置justify-content: center;
+            </div>
+            <div>
+              I'm an element that is block-like with my siblings and we're centered in a row.
+            </div>
+        </main>
+    </body>
+</html>

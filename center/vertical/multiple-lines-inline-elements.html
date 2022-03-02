@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>多行行级元素垂直居中</title>
+        <style>
+            body {
+                background-color: coral;
+            }
+            main {
+                background-color: aliceblue;
+                margin: 10px 20px;
+                padding: 50px;
+            }
+            main a {
+                display: inline-block;
+                background-color: black;
+                color: white;
+                width: 100px;
+                padding: 30px 40px;
+                text-decoration: none;
+            }
+            main span {
+                display: table-cell;
+                background-color: black;
+                color: white;
+                padding: 20px;
+                vertical-align: middle;
+                height: 100px;
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <a href="#0">通过设置padding-top和padding-bottom值相等实现垂直居中</a>
+        </main>
+        <main>
+            <span>或者设置display: table-cell, vertical-align: middle实现垂直居中</span>
+        </main>
+    </body>
+</html>

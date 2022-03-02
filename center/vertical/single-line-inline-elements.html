@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>单行行级元素垂直居中</title>
+        <style>
+            body {
+                background-color: coral;
+            }
+            main {
+                background-color: aliceblue;
+                margin: 10px 20px;
+                padding: 50px;
+            }
+            main a {
+                background-color: black;
+                color: white;
+                padding: 30px 40px;
+                text-decoration: none;
+            }
+            main span {
+                display: inline-block; /* span本身不能被设置height */
+                background-color: black;
+                color: white;
+                padding: 20px;
+                height: 100px;
+                line-height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <a href="#0">通过设置</a>
+            <a href="#0">padding-top</a>
+            <a href="#0">padding-bottom</a>
+            <a href="#0">值相等</a>
+            <a href="#0">实现垂直居中</a>
+        </main>
+        <main>
+            <span>或者</span>
+            <span>设置line-height</span>
+            <span>与height</span>
+            <span>值相等</span>
+            <span>实现垂直居中</span>
+        </main>
+    </body>
+</html>
